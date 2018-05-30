@@ -1,0 +1,67 @@
+.imagecontainer{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.images{
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flexitems{
+	height: 300px;
+	width: 25%;
+}
+
+.container .thumbnail{
+	max-height: 300px;
+	display: inline-block;
+}
+
+.img-responsive.image{
+	height: 150px;
+}
+
+.titel{
+	border: .5px solid #4682B4;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	padding: 2px;
+}
+
+#delete-form{
+    display: inline;
+}
+
+.description{
+	height: 20px;
+	overflow: hidden;
+}
+
+.banner{
+	background-image: url(img/Route-66-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: cover; 
+	height: 600px;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.blogpost{
+	border-bottom: 1px solid black;
+	height: 100%;
+}
+
+.randomName{
+	width: 60%;
+	text-align: center;
+}

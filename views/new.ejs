@@ -1,0 +1,37 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+<h1 style="text-align: center;">Maak een nieuwe blog post aan</h1>
+    <div style="width:60%; margin: 20px auto;">
+        <form action="/BlogPosts" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="name" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="image" placeholder="image url" />
+            </div>
+            <div class="form-group">
+                <!--<textarea class="fr-view" rows="5" type="text" id="description" name="description" placeholder="description"></textarea>-->
+                <textarea name="description" id="description" cols="500" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Save</button>
+            </div>
+        </form>
+        <a href="/">Go back</a>
+    </div>
+
+</div>
+<!-- Include external JS libs. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+ 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/js/froala_editor.pkgd.min.js"></script>
+ 
+ <!-- Initialize the editor. -->
+    <script> $(function() { $('#description').froalaEditor({
+      toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', 'undo', 'redo'],
+      toolbarVisibleWithoutSelection: true
+      }) }); </script>
+<% include ../partials/footer.ejs %>

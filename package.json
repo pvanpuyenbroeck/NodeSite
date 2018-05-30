@@ -1,0 +1,21 @@
+{
+  "name": "roadtripusa",
+  "version": "1.0.0",
+  "description": "Site met foto's van roadtrip usa",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pieter Van Puyenbroeck",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dateformat": "^2.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-formidable": "^1.0.0",
+    "fine-uploader": "^5.15.0",
+    "formidable": "^1.1.1",
+    "mongoose": "^4.9.6"
+  }
+}

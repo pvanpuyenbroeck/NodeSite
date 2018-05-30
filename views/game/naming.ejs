@@ -1,0 +1,21 @@
+<% include ../../partials/header.ejs %>
+<h1>Naming</h1>
+<div class="randomName">
+<form action="/naming" method="GET">
+    <h4><%=name._doc.Voornaam%></h4>
+    <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block">New Name</button>
+     </div>
+</form>
+</div>
+
+<!-- <div class="randomName">
+    <h2><%=name._doc.Voornaam%></h2>
+</div>
+
+<% names.forEach(function(names){%>
+    <div class="randomName">
+    <h4><%=names._doc.Voornaam%></h4>
+    </div>
+<%});%> -->
+<% include ../../partials/footer.ejs %>
